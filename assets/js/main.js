@@ -9,6 +9,8 @@ document.addEventListener(
     const add_class_on_scroll = () => header.classList.add("scroll-class");
     const remove_class_on_scroll = () => header.classList.remove("scroll-class");
 
+    const mybutton = document.querySelector(".back-to-top");
+
     window.addEventListener("scroll", function () {
       scrollpos = window.scrollY;
 
@@ -17,10 +19,25 @@ document.addEventListener(
       } else {
         remove_class_on_scroll();
       }
+
+      if (document.body.scrollTop > 40 || document.documentElement.scrollTop > 40) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
     });
   },
   false
 );
+
+// window.addEventListener("scroll", function () {
+//   if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+//     mybutton.style.display = "block";
+//   } else {
+//     mybutton.style.display = "none";
+//   }
+// });
+
 let divisor = document.getElementById("divisor"),
   slider = document.getElementById("slider");
 
