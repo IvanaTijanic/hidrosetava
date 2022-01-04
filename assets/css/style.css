@@ -86,7 +86,6 @@ html {
     background-size: cover;
     height: 100vh;
     display: grid;
-    background-color: rgba(0,0,0, 0.4);
     animation: image 100s infinite;
 }
 
