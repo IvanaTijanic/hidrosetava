@@ -81,7 +81,10 @@ html {
 
 .hero-wrapper {
     height: 100vh;
-    animation: image 13s infinite;
+    animation: image 20s infinite;
+    /* animation-delay: 10s; */
+    animation-timing-function: ease-in-out;
+    animation-direction: alternate;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
