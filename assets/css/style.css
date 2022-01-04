@@ -86,31 +86,23 @@ html {
     background-size: cover;
     height: 100vh;
     display: grid;
-    animation: image 100s infinite;
+    animation: image 13s infinite;
 }
 
 @keyframes image {
     0% {
-        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/temp/background.jpg); */
         background-image: url(../images/temp/background.jpg);
     }
 
-    25% {
-        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/601/601'); */
+    35% {
         background-image: url(../images/temp/1.jpg);
         
     }
-    50% {
-        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/601/601'); */
+    65% {
         background-image: url(../images/temp/2.jpg);
         
     }
-    75% {
-        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/600/600'); */
-        background-image: url(../images/temp/3.jpg);
-    }
     100% {
-        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/600/600'); */
         background-image: url(../images/temp/3.jpg);
     }
 
