@@ -80,12 +80,40 @@ html {
 /* hero section */
 
 .hero-wrapper {
-    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/temp/background.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat, repeat;
     height: 100vh;
     display: grid;
+    background-color: rgba(0,0,0, 0.4);
+    animation: image 100s infinite;
+}
+
+@keyframes image {
+    0% {
+        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/temp/background.jpg); */
+        background-image: url(../images/temp/background.jpg);
+    }
+
+    25% {
+        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/601/601'); */
+        background-image: url(../images/temp/1.jpg);
+        
+    }
+    50% {
+        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/601/601'); */
+        background-image: url(../images/temp/2.jpg);
+        
+    }
+    75% {
+        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/600/600'); */
+        background-image: url(../images/temp/3.jpg);
+    }
+    100% {
+        /* background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url('https://unsplash.it/600/600'); */
+        background-image: url(../images/temp/3.jpg);
+    }
 
 }
 
@@ -153,10 +181,12 @@ h1.title {
     visibility: hidden;
     transition: all 0.6s ease-in-out;
 }
-.div1:hover{
+
+.div1:hover {
     border: 5px solid var(--main-color);
 
 }
+
 .div1:hover .wwd-title:before {
     visibility: visible;
     width: 100%;
@@ -467,7 +497,7 @@ h1.title {
     bottom: -4px;
     width: calc(100% - 4rem);
     z-index: -1;
-    opacity:1;
+    opacity: 1;
 }
 
 .lb-right {
