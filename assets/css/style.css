@@ -82,7 +82,7 @@ html {
 .hero-wrapper {
     height: 100vh;
     animation: image 13s infinite;
-    background-position: center center;
+    background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -639,6 +639,11 @@ footer {
 }
 
 @media only screen and (max-width: 769px) {
+    .hero-wrapper {
+        height: 100vh;
+        animation: unset;
+        background-image: unset;
+    }
     .d-md-none {
         display: none;
     }
