@@ -80,13 +80,13 @@ html {
 /* hero section */
 
 .hero-wrapper {
+    height: 100vh;
+    animation: image 13s infinite;
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    height: 100vh;
     display: grid;
-    animation: image 13s infinite;
 }
 
 @keyframes image {
