@@ -680,11 +680,12 @@ footer {
 
     .logo-top {
         text-align: center;
-        opacity: 0.5;
+        opacity: 0.1;
     }
 
     .logo-bottom {
         bottom: -8px;
+        opacity: 0.2;
     }
 
     .footer-logo {
