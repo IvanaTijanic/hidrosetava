@@ -80,36 +80,12 @@ html {
 /* hero section */
 
 .hero-wrapper {
-    height: 100vh;
-    animation: image 20s infinite;
-    /* animation-delay: 10s; */
-    animation-timing-function: ease-in-out;
-    animation-direction: alternate;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/temp/background.jpg);
     background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat, repeat;
+    height: 100vh;
     display: grid;
-}
-
-@keyframes image {
-    0% {
-        background-image: url(../images/temp/background.jpg);
-    }
-
-    35% {
-        background-image: url(../images/temp/1.jpg);
-
-    }
-
-    65% {
-        background-image: url(../images/temp/2.jpg);
-
-    }
-
-    100% {
-        background-image: url(../images/temp/3.jpg);
-    }
 
 }
 
@@ -119,9 +95,6 @@ html {
     margin: 0 auto;
     justify-content: center;
     align-self: center;
-    /* background-color: rgba(0,0,0, 0.4);
-    padding: 15px;
-    border-radius: 24px; */
 }
 
 h1.title {
@@ -177,12 +150,10 @@ h1.title {
     visibility: hidden;
     transition: all 0.6s ease-in-out;
 }
-
-.div1:hover {
+.div1:hover{
     border: 5px solid var(--main-color);
 
 }
-
 .div1:hover .wwd-title:before {
     visibility: visible;
     width: 100%;
@@ -493,7 +464,7 @@ h1.title {
     bottom: -4px;
     width: calc(100% - 4rem);
     z-index: -1;
-    opacity: 1;
+    opacity:1;
 }
 
 .lb-right {
@@ -644,15 +615,6 @@ footer {
 }
 
 @media only screen and (max-width: 769px) {
-    .hero-wrapper {
-        height: 100vh;
-        animation: unset;
-        background: linear-gradient(to bottom, rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url(../images/temp/background.jpg);
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat, repeat;
-    }
-
     .d-md-none {
         display: none;
     }
